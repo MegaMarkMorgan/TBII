@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+html{width:100%;}
+
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type=radio]+img {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+input[type=radio]:checked + img {
+  outline: 5px solid orange;
+}
+
+img{
+	float:left;
+	width:20%;
+	background-color:#fff;
+	overflow:auto;
+	}
+
+
+
+
+/*----------------------------<1280-------------------------------------*/
+
+@media only screen and (max-width: 1280px){
+
+	label{
+	width:50%;
+	}
+
+	#wrapper {
+	max-width:768px;
+	}
+
+}
+
+/*----------------------------<480-------------------------------------*/
+
+@media only screen and (max-width : 1041px ){
+
+	label{
+	width:100%;
+	}
+
+	#wrapper {
+	max-width:480px;
+	}
+}
