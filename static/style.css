@@ -1,7 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
-html{width:100%;}
 
+body{
+  font-family: Tahoma, sans-serif;
+  color: white;
+  background-color: #47bb8e;
+  position: relative;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.article_double{
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.article_single{
+margin-top: 15%;
+width: 100%;
+position: absolute;
+}
 input[type=radio] {
   position: absolute;
   opacity: 0;
@@ -13,42 +32,71 @@ input[type=radio]+img {
 }
 
 input[type=radio]:checked + img {
-  outline: 5px solid orange;
+  outline: 5px solid #1e1c52;
 }
 
-img{
+input{
+  margin: 0 auto;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  display:block;
+}
+
+input+img{
 	float:left;
-	width:20%;
-	background-color:#fff;
+	width:25%;
+	background-color:#b8b8b8;
 	overflow:auto;
+	margin: 5%
 	}
 
 
-
-
-/*----------------------------<1280-------------------------------------*/
-
-@media only screen and (max-width: 1280px){
-
-	label{
-	width:50%;
-	}
-
-	#wrapper {
-	max-width:768px;
-	}
+button, input[type=submit]{
+	background-color: #1e1c52;
+  border: none;
+	border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 30%;
+  cursor: pointer;
+  position: absolute;
+  display:block;
 
 }
+a{
+  background-color: #1e1c52;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 30%;
+  cursor: pointer;
+  position: absolute;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
 
-/*----------------------------<480-------------------------------------*/
-
-@media only screen and (max-width : 1041px ){
-
-	label{
-	width:100%;
-	}
-
-	#wrapper {
-	max-width:480px;
-	}
+#logo{
+  width: 80%;
+}
+#start_page{
+position: relative;
+margin-top: 20%;
 }
