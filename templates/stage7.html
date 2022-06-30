@@ -2,23 +2,41 @@
 <html>
     <head>
         <title>Avatar Generator</title>
-        <!-- <link rel="stylesheet" type="text/css" href="../static/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
     </head>
     <body>
+      <div class="article_double">
+        <img src="../static/Avatar.png"><br>
+      </div>
+      <div class="article_double">
+        <form action="" method="post">
+          <h1>Choose Mouth:</h1><br>
+          <label>
+            <input type="radio" name="mouth" value="mouth_happy">
+            <img src="../static/mouth_happy.png">
+          </label>
 
-      <form action="" method="post">
-        Choose your avatars mouth:
-        <input type="radio" id="mouth_happy" name="mouth" value="mouth_happy">
-        <label for="mouth_happy">Happy</label><br>
-        <input type="radio" id="mouth_neutral" name="mouth" value="mouth_neutral">
-        <label for="mouth_neutral">Neutral</label><br>
-        <input type="radio" id="mouth_sad" name="mouth" value="mouth_sad">
-        <label for="mouth_sad">Sad</label>
-        <input type="radio" id="mouth_smirk" name="mouth" value="mouth_smirk">
-        <label for="mouth_smirk">Smirk</label>
-        <input type="radio" id="mouth_tongue_out" name="mouth" value="mouth_tongue_out">
-        <label for="mouth_tongue_out">Toungue out</label>
-        <input type="submit" value="Next">
-      </form>
+          <label>
+            <input type="radio" name="mouth" value="mouth_neutral">
+            <img src="../static/mouth_neutral.png">
+          </label>
+
+          <label>
+            <input type="radio" name="mouth" value="mouth_sad">
+            <img src="../static/mouth_sad.png">
+          </label>
+
+          <label>
+            <input type="radio" name="mouth" value="mouth_smirk">
+            <img src="../static/mouth_smirk.png">
+          </label>
+
+          <label>
+            <input type="radio" name="mouth" value="mouth_tongue_out">
+            <img src="../static/mouth_tongue_out.png">
+          </label>
+          <input type="submit" value="Next Step">
+        </form>
+      </div>
     </body>
 </html>

@@ -2,21 +2,36 @@
 <html>
     <head>
         <title>Avatar Generator</title>
-        <!-- <link rel="stylesheet" type="text/css" href="../static/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
     </head>
     <body>
+      <div class="article_double">
+        <img src="../static/Avatar.png"><br>
+      </div>
+      <div class="article_double">
+        <form action="" method="post">
+          <h1>Choose Eyes</h1><br>
+          <label>
+            <input type="radio" name="eyes" value="eyes_happy">
+            <img src="../static/eyes_happy.png">
+          </label>
 
-      <form action="" method="post">
-        Choose your avatars eyes:
-        <input type="radio" id="eyes_neutral" name="eyes" value="eyes_neutral">
-        <label for="eyes_neutral">Neutral</label><br>
-        <input type="radio" id="eyes_happy" name="eyes" value="eyes_happy">
-        <label for="eyes_happy">Happy</label><br>
-        <input type="radio" id="eyes_lashes" name="eyes" value="eyes_lashes">
-        <label for="eyes_lashes">Lashes</label>
-        <input type="radio" id="eyes_sad" name="eyes" value="eyes_sad">
-        <label for="eyes_sad">Sad</label>
-        <input type="submit" value="Next">
-      </form>
+          <label>
+            <input type="radio" name="eyes" value="eyes_lashes">
+            <img src="../static/eyes_lashes.png">
+          </label>
+
+          <label>
+            <input type="radio" name="eyes" value="eyes_neutral">
+            <img src="../static/eyes_neutral.png">
+          </label>
+
+          <label>
+            <input type="radio" name="eyes" value="eyes_sad">
+            <img src="../static/eyes_sad.png">
+          </label>
+          <input type="submit" value="Next Step">
+        </form>
+      </div>
     </body>
 </html>
